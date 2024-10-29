@@ -8,6 +8,10 @@ body {
   margin: 0 auto;
 }
 
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 header {
   background-image: linear-gradient(
       360deg,
@@ -52,7 +56,7 @@ header a {
   letter-spacing: 3px;
   text-transform: uppercase;
   text-align: center;
-  background: #885df1;
+  background: #bb5f4c;
   color: white;
   text-decoration: none;
   width: 146px;
@@ -64,7 +68,27 @@ header a {
   opacity: 0px;
 }
 
-@media (max-width: 900px) {
+footer {
+  color: white;
+  background-image: linear-gradient(
+      rgba(63, 23, 15, 0.4),
+      rgba(63, 23, 15, 0.6)
+    ),
+    url("../images/mclyte-footer.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 180px 0;
+}
+
+footer h3 {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: left;
+}
+
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
