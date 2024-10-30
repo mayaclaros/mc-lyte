@@ -9,9 +9,22 @@ body {
 }
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
+
   grid-gap: 64px;
 }
+
+.img-responsive {
+  max-width: 100%;
+}
+.grid-2-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns-with-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
 section {
   max-width: 1200px;
   margin: 0 auto;
@@ -78,14 +91,6 @@ main {
   background-color: white;
 }
 
-main h3 {
-  color: #bb5f4c;
-  font-family: "Poppins";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-align: left;
-}
 main h2 {
   font-weight: 700;
   font-size: 16px;
@@ -93,10 +98,23 @@ main h2 {
   letter-spacing: 5px;
   text-transform: uppercase;
   opacity: 0.5;
+  margin: 0;
 }
-
+main h3 {
+  color: #bb5f4c;
+  font-family: "Poppins";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+}
 main p {
   color: #bb5f4c;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.7;
 }
 
 footer {
@@ -141,6 +159,21 @@ footer a {
   text-decoration: none;
 }
 
+.style-script-regular {
+  font-family: "Style Script", cursive;
+  font-size: 48px;
+  font-weight: 900;
+  color: #e1c9fb;
+}
+
+.rock-salt-regular {
+  font-family: "Rock Salt", cursive;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: #fe1a8c;
+}
+
 @media (max-width: 960px) {
   header {
     padding: 60px 0;
@@ -154,5 +187,14 @@ footer a {
   }
   header h3 {
     font-size: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
   }
 }
