@@ -7,6 +7,10 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
+
+.text-center {
+  text-align: center;
+}
 .grid {
   display: grid;
 
@@ -26,9 +30,13 @@ body {
 }
 
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 100px 0;
+}
+
+section.secondary {
+  background: #faeaf2;
 }
 
 header {
