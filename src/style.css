@@ -13,20 +13,52 @@ body {
 }
 .grid {
   display: grid;
-
   grid-gap: 64px;
 }
 
 .img-responsive {
   max-width: 100%;
+  display: block;
+}
+
+.img-bigger {
+  width: 300px;
+
+  display: block;
 }
 .grid-2-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
 .grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
+}
+
+.card {
+  background: white;
+  margin: 30px 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 0px 30px 30px;
+}
+.btn {
+  width: Fill (306px) px;
+  height: Hug (51px) px;
+  padding: 16px 32px 16px 32px;
+  gap: 10px;
+  border-radius: 100px;
+  opacity: 0px;
+  background: #dbbefa;
+  color: #666666;
 }
 
 section {
@@ -116,13 +148,29 @@ main h3 {
   line-height: 1.5;
   margin: 0;
 }
-main p {
+
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
   color: #bb5f4c;
+  margin: 0;
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  color: #bb5f4c;
+  margin: 0;
+}
+main p {
+  color: black;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 footer {
