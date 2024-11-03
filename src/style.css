@@ -7,8 +7,15 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
-
+.grid-container {
+  grid-template-columns: 1fr 1fr 1fr;
+}
 .text-center {
+  text-align: center;
+}
+
+.text-center-color {
+  color: white;
   text-align: center;
 }
 .grid {
@@ -24,6 +31,10 @@ body {
 .img-bigger {
   width: 350px;
   display: block;
+}
+
+.instagram-embeds {
+  margin: 30px 0;
 }
 .grid-2-columns {
   display: grid;
